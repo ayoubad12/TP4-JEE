@@ -15,19 +15,109 @@
     {
       "id": "3",
       "name": "Product 3",
-      "price": 7.99,
+      "price": 10.99,
       "checked": true
     },
     {
       "id": "4",
       "name": "Product 4",
-      "price": 15.49,
+      "price": 24.99,
       "checked": true
     },
     {
       "id": "5",
       "name": "Product 5",
+      "price": 15.99,
+      "checked": false
+    },
+    {
+      "id": "6",
+      "name": "Product 6",
+      "price": 29.99,
+      "checked": true
+    },
+    {
+      "id": "7",
+      "name": "Product 7",
       "price": 12.99,
+      "checked": false
+    },
+    {
+      "id": "8",
+      "name": "Product 8",
+      "price": 27.99,
+      "checked": true
+    },
+    {
+      "id": "9",
+      "name": "Product 9",
+      "price": 10,
+      "checked": false
+    },
+    {
+      "id": "10",
+      "name": "Product 10",
+      "price": 20,
+      "checked": true
+    },
+    {
+      "id": "11",
+      "name": "Product 11",
+      "price": 18.5,
+      "checked": false
+    },
+    {
+      "id": "12",
+      "name": "Product 12",
+      "price": 34.99,
+      "checked": true
+    },
+    {
+      "id": "13",
+      "name": "Product 13",
+      "price": 14.99,
+      "checked": false
+    },
+    {
+      "id": "14",
+      "name": "Product 14",
+      "price": 22.5,
+      "checked": true
+    },
+    {
+      "id": "15",
+      "name": "Product 15",
+      "price": 8.99,
+      "checked": false
+    },
+    {
+      "id": "16",
+      "name": "Product 16",
+      "price": 19.99,
+      "checked": true
+    },
+    {
+      "id": "17",
+      "name": "Product 17",
+      "price": 16.5,
+      "checked": false
+    },
+    {
+      "id": "18",
+      "name": "Product 18",
+      "price": 32,
+      "checked": true
+    },
+    {
+      "id": "19",
+      "name": "Product 19",
+      "price": 9.99,
+      "checked": false
+    },
+    {
+      "id": "20",
+      "name": "Product 20",
+      "price": 25.5,
       "checked": true
     }
   ]
