@@ -3,7 +3,8 @@
     <div class="card-body">
       <h3>New-Product Component</h3>
       <div class="col-6">
-        {{productForm.value | json }}
+<!--        for debbugin-->
+<!--        {{productForm.value | json }} -->
         <form [formGroup]="productForm" (submit)="submitProduct()">
           <div class="mb-3">
             <label class="form-label fs-5" for="nameInput"  >* name:</label>

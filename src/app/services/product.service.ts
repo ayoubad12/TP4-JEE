@@ -29,5 +29,12 @@ export class ProductService {
   //   return this.http.get<Product[]>(`http://localhost:8089/products?name_like=${keyword}`); // not working anymore
   // }
 
+  public getProductById(productId:number):Observable<Product>{
+    return this.http.get<Product>(`http://localhost:8089/products/${productId}`)
+  }
+
+  public updateProduct(product:Product){
+    return this.http.put<Product>(`http://localhost:8089/products/${product.id}`, product);
+  }
 
 }

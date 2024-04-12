@@ -1,6 +1,26 @@
-<p>edit-product works!</p>
-
-
-<div>
-  {{productId}}
+<div class="p-3">
+  <div class="card">
+    <div class="card-header">
+      product id = {{productId}}
+    </div>
+    <div class="card-body">
+<!--      ngIf assures that the form is show when the formGroup is done initializing -->
+      <form [formGroup]="productFormGroup" *ngIf="productFormGroup" (submit)="updateProduct()">
+        <div class="mb-3">
+          <label class="form-label fs-5" for="nameInput"  >* name:</label>
+          <input class="form-control form-control-lg" id="nameInput" type="text" placeholder="laptop" formControlName="name">
+        </div>
+        <div class="mb-3">
+          <label class="form-label fs-5" for="priceInput" >* price:</label>
+          <input class="form-control form-control-lg" id="priceInput" type="text" placeholder="99.99" formControlName="price">
+        </div>
+        <div class="form-check form-switch mb-3">
+          <input class="form-check-input " type="checkbox" role="switch" id="flexSwitchCheckDefault" formControlName="checked">
+          <label class="form-check-label " for="flexSwitchCheckDefault">Checked</label>
+        </div>
+        <!--          added a property binding to check if the form is valid-->
+        <button [disabled]="productFormGroup.invalid" type="submit" class="btn btn-primary">save</button>
+      </form>
+    </div>
+  </div>
 </div>

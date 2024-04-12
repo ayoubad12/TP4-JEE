@@ -2,13 +2,13 @@
   "products": [
     {
       "id": "1",
-      "name": "Product 1",
+      "name": "Productttt 1",
       "price": 10.99,
       "checked": true
     },
     {
       "id": "2",
-      "name": "Product 2",
+      "name": "Producttt 2",
       "price": 24.99,
       "checked": true
     },
