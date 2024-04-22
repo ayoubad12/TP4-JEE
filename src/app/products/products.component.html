@@ -3,10 +3,10 @@
     <div class="card-body">
       <h3>Products Component</h3>
       <div class="card-body">
-        {{keyword}}
+<!--        {{keyword}}-->
 <!--          using dual binding, to link the field below with the property keyword -->
-        <input type="text" name="search" [(ngModel)] ="keyword">
-        <button (click)="searchProduct()" class="btn btn-outline-info ms-2">
+        <input type="text" name="search" [(ngModel)] ="appState.productState.keyword">
+        <button (click)="getProducts()" class="btn btn-outline-info ms-2">
           <i class="bi bi-search"></i>
         </button>
       </div>
@@ -21,7 +21,7 @@
         </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let product of products">
+          <tr *ngFor="let product of appState.productState.products">
             <td>{{ product.id }}</td>
             <td>{{ product.name }}</td>
             <td>{{ product.price }}</td>
@@ -46,13 +46,13 @@
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item">
-            <button class="btn btn-outline-primary ms-2" [disabled]="currentPage===1" (click)="getProducts(currentPage-1)">Previous</button>
+            <button class="btn btn-outline-primary ms-2" [disabled]="appState.productState.currentPage===1" (click)="getProducts(appState.productState.currentPage-1)">Previous</button>
           </li>
-          <li *ngFor="let iteration of iterationArray, index as i" class="page-item">
-            <button class="" [ngClass]="currentPage===i+1 ?'btn btn-primary ms-2':'btn btn-outline-primary ms-2'"  (click)="getProducts(i+1)">{{i+1}}</button>
+          <li *ngFor="let page of [].constructor(this.appState.productState.totalPages); index as i" class="page-item">
+            <button class="" [ngClass]="appState.productState.currentPage===i+1 ?'btn btn-primary ms-2':'btn btn-outline-primary ms-2'"  (click)="getProducts(i+1)">{{i+1}}</button>
           </li>
           <li class="page-item">
-            <button class="btn btn-outline-primary ms-2" [disabled]="currentPage===nbrPrages" (click)="getProducts(currentPage+1)">Next</button>
+            <button class="btn btn-outline-primary ms-2" [disabled]="appState.productState.currentPage===appState.productState.totalPages" (click)="getProducts( appState.productState.currentPage+1)">Next</button>
           </li>
         </ul>
       </nav>

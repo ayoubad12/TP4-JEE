@@ -2,13 +2,13 @@
   "products": [
     {
       "id": "1",
-      "name": "Productttt 1",
+      "name": "Productt 1",
       "price": 10.99,
-      "checked": true
+      "checked": false
     },
     {
       "id": "2",
-      "name": "Producttt 2",
+      "name": "Product 2",
       "price": 24.99,
       "checked": true
     },
@@ -21,103 +21,97 @@
     {
       "id": "4",
       "name": "Product 4",
-      "price": 24.99,
+      "price": 15.99,
       "checked": true
     },
     {
       "id": "5",
       "name": "Product 5",
-      "price": 15.99,
+      "price": 29.99,
       "checked": false
     },
     {
       "id": "6",
       "name": "Product 6",
-      "price": 29.99,
+      "price": 12.99,
       "checked": true
     },
     {
       "id": "7",
       "name": "Product 7",
-      "price": 12.99,
-      "checked": false
+      "price": 19.99,
+      "checked": true
     },
     {
       "id": "8",
       "name": "Product 8",
-      "price": 27.99,
-      "checked": true
+      "price": 9.99,
+      "checked": false
     },
     {
       "id": "9",
       "name": "Product 9",
-      "price": 10,
+      "price": 8.99,
       "checked": false
     },
     {
       "id": "10",
       "name": "Product 10",
-      "price": 20,
+      "price": 14.99,
       "checked": true
     },
     {
       "id": "11",
       "name": "Product 11",
-      "price": 18.5,
+      "price": 11.99,
       "checked": false
     },
     {
       "id": "12",
       "name": "Product 12",
-      "price": 34.99,
+      "price": 16.99,
       "checked": true
     },
     {
       "id": "13",
       "name": "Product 13",
-      "price": 14.99,
+      "price": 7.99,
       "checked": false
     },
     {
       "id": "14",
       "name": "Product 14",
-      "price": 22.5,
+      "price": 22.99,
       "checked": true
     },
     {
       "id": "15",
       "name": "Product 15",
-      "price": 8.99,
+      "price": 17.99,
       "checked": false
     },
     {
       "id": "16",
       "name": "Product 16",
-      "price": 19.99,
+      "price": 13.99,
       "checked": true
     },
     {
       "id": "17",
       "name": "Product 17",
-      "price": 16.5,
+      "price": 6.99,
       "checked": false
     },
     {
       "id": "18",
       "name": "Product 18",
-      "price": 32,
+      "price": 21.99,
       "checked": true
     },
     {
-      "id": "19",
-      "name": "Product 19",
-      "price": 9.99,
-      "checked": false
-    },
-    {
-      "id": "20",
-      "name": "Product 20",
-      "price": 25.5,
+      "id": "10f6",
+      "name": "newProduct",
+      "price": "15",
       "checked": true
     }
   ]

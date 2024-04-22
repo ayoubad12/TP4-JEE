@@ -7,22 +7,23 @@ import {Product, ProductApiResponse} from "../products/Product";
   providedIn: 'root'
 })
 export class ProductService {
+  private host: string = "http://localhost:8089"
   constructor(private http : HttpClient){}
 
   public getProduct(page: number = 1, size: number=4):Observable<ProductApiResponse>{
-    return this.http.get<ProductApiResponse>(`http://localhost:8089/products?_page=${page}&_per_page=${size}`) ;
+    return this.http.get<ProductApiResponse>(`${this.host}/products?_page=${page}&_per_page=${size}`) ;
   }
 
   public checkProduct(product:Product):Observable<Product>{
-    return this.http.patch<Product>(`http://localhost:8089/products/${parseInt(product.id)}`, {checked:product?.checked})
+    return this.http.patch<Product>(`${this.host}/products/${parseInt(product.id)}`, {checked:product?.checked})
   }
 
   public deleteProduct(productId:String):Observable<void>{
-    return this.http.delete<void>(`http://localhost:8089/products/${productId}`);
+    return this.http.delete<void>(`${this.host}/products/${productId}`);
   }
 
   public saveProduct(product: Product):Observable<Product>{
-    return this.http.post<Product>('http://localhost:8089/products/', product) ;
+    return this.http.post<Product>(`${this.host}/products/`, product) ;
   }
 
   // public searchProducts(keyword:String):Observable<Product[]>{

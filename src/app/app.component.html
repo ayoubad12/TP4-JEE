@@ -1,13 +1,4 @@
-<h1>Hello {{title}}</h1>
-<nav>
-  <ul>
-    <button class="" *ngFor="let action of actions"
-            routerLink="{{action.path}}"
-            (click)="setAction(action.name)"
-            [ngClass]="action.name == currentAction ? 'btn btn-info ms-1' : 'btn btn-outline-info ms-1'">
-      {{action.name}}
-      <i class="bi {{action.icon}}"></i>
-    </button>
-  </ul>
-</nav>
+<app-navbar></app-navbar>
+<app-dashboard></app-dashboard>
+<app-app-errors></app-app-errors>
 <router-outlet></router-outlet>

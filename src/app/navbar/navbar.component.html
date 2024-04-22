@@ -1,0 +1,17 @@
+<h1>Hello {{title}}</h1>
+<nav>
+  <ul class="nav nav-pills">
+    <li *ngFor="let action of actions">
+      <button routerLink="{{action.path}}"
+              (click)="setAction(action.name)"
+              [ngClass]="action.name == currentAction ? 'btn btn-info ms-1' : 'btn btn-outline-info ms-1'">
+        {{action.name}}
+        <i class="bi {{action.icon}}"></i>
+      </button>
+    </li>
+    <li *ngIf="this.loadingService.isLoading$ | async">
+      <div class="spinner-border text-primary ms-2" role="status">
+      </div>
+    </li>
+  </ul>
+</nav>
