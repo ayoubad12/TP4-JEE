@@ -14,9 +14,9 @@ export class NavbarComponent {
   currentAction : string = "Home" ;
   title = 'enset-app' ;
   actions : Array<any> = [
-    {name:"Home", path:"/home" ,icon:"bi-house"},
-    {name:"Products", path:"/products", icon:"bi-box"},
-    {name:"New Product", path:"/newProduct" , icon:"bi-plus-circle"}
+    {name:"Home", path:"/admin/home" ,icon:"bi-house"},
+    {name:"Products", path:"/admin/products", icon:"bi-box"},
+    {name:"New Product", path:"/admin/newProduct" , icon:"bi-plus-circle"}
   ];
 
 
